@@ -32,23 +32,39 @@ nav {
 }
 .navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
+h2 span{
+  color:  #149f39 ;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
-.bar_icon {
-  font-size: 32px;
+.links a{
+  text-decoration: none;
+  margin-left: 20px;
+  color: #666;  
+  font-weight: 500;
 }
-
+.links a:hover{
+  color: #149f39;
+}
+.logo_container , .footer_logo{
+  display: flex;
+  gap: 10px;
+}
+img.logo{
+  width: 25px;
+  height: 35px;
+}
 /* Hero Section */
 .hero {
   display: flex;
   gap: 100px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 .hero_content {
@@ -62,6 +78,10 @@ nav {
   color: white;
   align-self: flex-start;
 }
+.heroImage{
+  width: 500px;
+  /* height: 500px; */
+}
 
 .hero_content h1 {
   font-size: 72px;
@@ -69,8 +89,9 @@ nav {
   font-weight: 400;
 }
 .explore_btn {
-  background: #ffc066;
+  background: #C6A55C;
   align-self: flex-start;
+  border-radius: 20px;
 }
 
 /* Features Section */
@@ -168,10 +189,12 @@ footer {
 .link_lists ul li {
   font-size: 16px;
   margin-bottom: 5px;
+  font-weight: 400;
+  color: #666;
 }
-.news_letter h3 {
+.footer_container h3 {
   margin-bottom: 10px;
-  color: gray;
+  color: #666;
 }
 .news_letter input {
   padding: 5px 40px;
@@ -186,6 +209,18 @@ footer {
   display: flex;
   gap: 15px;
   font-size: 32px;
+}
+.icons{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-color: #616161;
+  padding: 5px;
+  border-radius: 50% ;
+}
+.icon{
+  color: #fff;
+  font-size: 30px;
 }
 @media (max-width: 786px) {
   .hero {
